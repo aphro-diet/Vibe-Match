@@ -1,144 +1,96 @@
-// Full Vibes Data (includes new categories)
-const fullVibes = {
-  desi: {
+const vibeData = {
+  Happy: {
+    image: 'https://via.placeholder.com/300x200?text=Happy',
+    colors: ['#FFD700', '#FF69B4', '#FFB6C1'],
     songs: [
-      { title: "Jai Jai Shivshankar", artist: "Vishal-Shekhar", cover: "https://i.imgur.com/DtkXWGb.jpg", link: "https://youtu.be/Xc6fROZ7vvE" },
-      { title: "Lungi Dance", artist: "Honey Singh", cover: "https://i.imgur.com/nW91VGg.jpg", link: "https://youtu.be/aJ5ejdyDmx4" },
-      { title: "Dil Dhadakne Do", artist: "Priyanka Chopra, Farhan Akhtar", cover: "https://i.imgur.com/1uBlvzn.jpg", link: "https://youtu.be/Li4Yg0Tay1w" }
-    ],
-    layouts: ["Indian wedding decor", "Saree-inspired colors", "Bollywood poster style"],
-    colors: ["#D32F2F", "#F44336", "#8BC34A"],
-    compliment: "You're as stunning as a Bollywood star!",
-    songOfDay: { title: "Lungi Dance", artist: "Honey Singh", link: "https://youtu.be/aJ5ejdyDmx4" }
+      { name: 'Happy - Pharrell Williams', url: 'https://www.youtube.com/watch?v=y6Sxv-sUYtM' },
+      { name: 'Can’t Stop the Feeling - Justin Timberlake', url: 'https://www.youtube.com/watch?v=ru0K8uYEZWw' }
+    ]
   },
-  picnic: {
+  Sad: {
+    image: 'https://via.placeholder.com/300x200?text=Sad',
+    colors: ['#708090', '#A9A9A9', '#4682B4'],
     songs: [
-      { title: "Sunflower", artist: "Post Malone", cover: "https://i.imgur.com/q17k0Rf.jpg", link: "https://youtu.be/ApXoWvfEYVU" },
-      { title: "Take It Easy", artist: "Eagles", cover: "https://i.imgur.com/U9QUqBz.jpg", link: "https://youtu.be/4WqfJ0HqJmQ" },
-      { title: "Adventure of a Lifetime", artist: "Coldplay", cover: "https://i.imgur.com/79VX12H.jpg", link: "https://youtu.be/QtXby3twMmI" }
-    ],
-    layouts: ["Nature-inspired vibes", "Picnic basket and blanket arrangement", "Boho chic setup"],
-    colors: ["#64B5F6", "#FFEB3B", "#8D6E63"],
-    compliment: "You brighten up every picnic day!",
-    songOfDay: { title: "Take It Easy", artist: "Eagles", link: "https://youtu.be/4WqfJ0HqJmQ" }
+      { name: 'Let Her Go - Passenger', url: 'https://www.youtube.com/watch?v=RBumgq5yVrA' },
+      { name: 'Someone Like You - Adele', url: 'https://www.youtube.com/watch?v=hLQl3WQQoQ0' }
+    ]
   },
-  wedding: {
+  Friends: {
+    image: 'https://via.placeholder.com/300x200?text=Friends',
+    colors: ['#4CAF50', '#81C784', '#AED581'],
     songs: [
-      { title: "Perfect", artist: "Ed Sheeran", cover: "https://i.imgur.com/UlSSkD0.jpg", link: "https://youtu.be/2Vv-BfVoq4g" },
-      { title: "Marry You", artist: "Bruno Mars", cover: "https://i.imgur.com/fWy90Af.jpg", link: "https://youtu.be/fR74zY2DJ-Q" },
-      { title: "A Thousand Years", artist: "Christina Perri", cover: "https://i.imgur.com/EDcse9B.jpg", link: "https://youtu.be/rtOvBOT3P6M" }
-    ],
-    layouts: ["Elegant floral arrangements", "Golden wedding ring accents", "Glittering fairytale lighting"],
-    colors: ["#FFD54F", "#FF7043", "#4CAF50"],
-    compliment: "You're the heart and soul of every wedding!",
-    songOfDay: { title: "Perfect", artist: "Ed Sheeran", link: "https://youtu.be/2Vv-BfVoq4g" }
+      { name: 'Count on Me - Bruno Mars', url: 'https://www.youtube.com/watch?v=yJYXItns2ik' },
+      { name: 'Best Day of My Life - American Authors', url: 'https://www.youtube.com/watch?v=Y66j_BUCBMY' }
+    ]
   },
-  happy: {
+  Aesthetic: {
+    image: 'https://via.placeholder.com/300x200?text=Aesthetic',
+    colors: ['#D8BFD8', '#E6E6FA', '#F5E1FD'],
     songs: [
-      { title: "Happy", artist: "Pharrell Williams", cover: "https://i.imgur.com/YXHbZ16.jpg", link: "https://youtu.be/Yb1cT0hFLbM" },
-      { title: "Can't Stop the Feeling!", artist: "Justin Timberlake", cover: "https://i.imgur.com/ML5XxGd.jpg", link: "https://youtu.be/ru0K8uYEZWw" },
-      { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", cover: "https://i.imgur.com/LWwR9D9.jpg", link: "https://youtu.be/OPf0YbXqDm0" }
-    ],
-    layouts: ["Colorful confetti background", "Smiling faces theme", "Positive affirmation quotes"],
-    colors: ["#FFEB3B", "#81C784", "#FF7043"],
-    compliment: "You radiate happiness and joy!",
-    songOfDay: { title: "Happy", artist: "Pharrell Williams", link: "https://youtu.be/Yb1cT0hFLbM" }
+      { name: 'Sweater Weather - The Neighbourhood', url: 'https://www.youtube.com/watch?v=GCdwKhTtNNw' },
+      { name: 'Electric Feel - MGMT', url: 'https://www.youtube.com/watch?v=MmZexg8sxyk' }
+    ]
   },
-  sad: {
+  Romantic: {
+    image: 'https://via.placeholder.com/300x200?text=Romantic',
+    colors: ['#FFC0CB', '#FF69B4', '#FFB6C1'],
     songs: [
-      { title: "Someone Like You", artist: "Adele", cover: "https://i.imgur.com/XB7gg0t.jpg", link: "https://youtu.be/hLQl3WQQoQ0" },
-      { title: "The Night We Met", artist: "Lord Huron", cover: "https://i.imgur.com/Y5QDCje.jpg", link: "https://youtu.be/2gTkaSxX_xk" },
-      { title: "All I Want", artist: "Kodaline", cover: "https://i.imgur.com/dWxggpB.jpg", link: "https://youtu.be/bbKGVUbi3D8" }
-    ],
-    layouts: ["Raindrop patterns", "Dimly lit mood", "Emotional monochrome themes"],
-    colors: ["#757575", "#B0BEC5", "#90A4AE"],
-    compliment: "Your strength shines even in the hardest moments.",
-    songOfDay: { title: "Someone Like You", artist: "Adele", link: "https://youtu.be/hLQl3WQQoQ0" }
+      { name: 'Perfect - Ed Sheeran', url: 'https://www.youtube.com/watch?v=2Vv-BfVoq4g' },
+      { name: 'All of Me - John Legend', url: 'https://www.youtube.com/watch?v=450p7goxZqg' }
+    ]
   },
-  friends: {
+  Dark: {
+    image: 'https://via.placeholder.com/300x200?text=Dark',
+    colors: ['#2C2C2C', '#1A1A1D', '#0D0D0D'],
     songs: [
-      { title: "Lean On Me", artist: "Bill Withers", cover: "https://i.imgur.com/hWsiwzE.jpg", link: "https://youtu.be/fOZqR8X2lF8" },
-      { title: "Count On Me", artist: "Bruno Mars", cover: "https://i.imgur.com/5kseuUP.jpg", link: "https://youtu.be/MReM6tYQ3so" },
-      { title: "With a Little Help From My Friends", artist: "The Beatles", cover: "https://i.imgur.com/LS6ft4S.jpg", link: "https://youtu.be/10uGOQOBqFk" }
-    ],
-    layouts: ["Group photos of friends", "Friendship quote designs", "Puzzle piece designs symbolizing unity"],
-    colors: ["#64B5F6", "#FFEB3B", "#FF9800"],
-    compliment: "True friendship is a rare and beautiful gift.",
-    songOfDay: { title: "Lean On Me", artist: "Bill Withers", link: "https://youtu.be/fOZqR8X2lF8" }
+      { name: 'Heathens - Twenty One Pilots', url: 'https://www.youtube.com/watch?v=UprcpdwuwCg' },
+      { name: 'Lovely - Billie Eilish ft. Khalid', url: 'https://www.youtube.com/watch?v=V1Pl8CzNzCw' }
+    ]
   },
-  aesthetic: {
+  Calm: {
+    image: 'https://via.placeholder.com/300x200?text=Calm',
+    colors: ['#ADD8E6', '#B0E0E6', '#E0FFFF'],
     songs: [
-      { title: "Blinding Lights", artist: "The Weeknd", cover: "https://i.imgur.com/92zNq95.jpg", link: "https://youtu.be/4NRyFC8Go-k" },
-      { title: "Sunflower", artist: "Post Malone", cover: "https://i.imgur.com/wJQvhBf.jpg", link: "https://youtu.be/ApXoWvfEYVU" },
-      { title: "Levitating", artist: "Dua Lipa", cover: "https://i.imgur.com/0O94ZYd.jpg", link: "https://youtu.be/TfG01leKHLo" }
-    ],
-    layouts: ["Soft pastel background", "Polaroid photo display", "Minimalist design"],
-    colors: ["#FFC107", "#FF9800", "#FF5722"],
-    compliment: "You're glowing with aesthetic vibes!",
-    songOfDay: { title: "Blinding Lights", artist: "The Weeknd", link: "https://youtu.be/4NRyFC8Go-k" }
+      { name: 'Weightless - Marconi Union', url: 'https://www.youtube.com/watch?v=UfcAVejslrU' },
+      { name: 'Bloom - The Paper Kites', url: 'https://www.youtube.com/watch?v=8inJtTG_DuU' }
+    ]
   }
 };
 
-let selectedImage = null;
-
-// Image Upload and Preview
-const imageInput = document.getElementById("imageInput");
-const imagePreview = document.getElementById("imagePreview");
-
-imageInput.addEventListener("change", function(event) {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function(e) {
-      selectedImage = e.target.result;
-      imagePreview.innerHTML = `<img src="${selectedImage}" alt="Uploaded Image" style="width: 100%; max-width: 400px; border-radius: 10px;">`;
-    };
-    reader.readAsDataURL(file);
-  }
-});
-
-// Generate the Full Vibe Based on the Selected Category
-function generateFullVibe() {
-  const categorySelect = document.getElementById("categorySelect");
-  const selectedCategory = categorySelect.value;
-  const vibe = fullVibes[selectedCategory];
-  const vibeContainer = document.getElementById("fullVibe");
-
-  if (!selectedCategory) {
-    return alert("Please select a vibe category.");
-  }
-
-  vibeContainer.innerHTML = `
-    <h2>${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Vibe</h2>
-    
-    <!-- Display Image if Uploaded -->
-    ${selectedImage ? `<img src="${selectedImage}" alt="User's Picture" style="width: 100%; max-width: 400px; border-radius: 10px;">` : ""}
-    
-    <div class="section">
-      <h4>Song Recommendations</h4>
-      <ul>
-        ${vibe.songs.map(song => `<li><a href="${song.link}" target="_blank">${song.title} by ${song.artist}<img src="${song.cover}" alt="${song.title}" /></a></li>`).join("")}
-      </ul>
-    </div>
-    <div class="section">
-      <h4>Layout Ideas</h4>
-      <ul>
-        ${vibe.layouts.map(layout => `<li>${layout}</li>`).join("")}
-      </ul>
-    </div>
-    <div class="section">
-      <h4>Vibe Colors</h4>
-      <div>
-        ${vibe.colors.map(c => `<span class="color-box" style="background-color:${c}"></span>`).join("")}
-      </div>
-    </div>
-    <div class="section">
-      <h4>Compliment</h4>
-      <p>${vibe.compliment}</p>
-    </div>
-    <div class="section">
-      <h4>Song of the Day</h4>
-      <a href="${vibe.songOfDay.link}" target="_blank">${vibe.songOfDay.title} by ${vibe.songOfDay.artist}</a>
-    </div>
-  `;
+function generateVibe(vibe) {
+  const board = document.getElementById('vibeBoard');
+  const vibeInfo = vibeData[vibe];
+  
+  const card = document.createElement('div');
+  card.className = 'card';
+  
+  const image = document.createElement('img');
+  image.src = vibeInfo.image;
+  card.appendChild(image);
+  
+  const title = document.createElement('h3');
+  title.textContent = vibe;
+  card.appendChild(title);
+  
+  const colorContainer = document.createElement('div');
+  colorContainer.className = 'colors';
+  vibeInfo.colors.forEach(color => {
+    const colorBox = document.createElement('div');
+    colorBox.className = 'color-box';
+    colorBox.style.backgroundColor = color;
+    colorContainer.appendChild(colorBox);
+  });
+  card.appendChild(colorContainer);
+  
+  const songList = document.createElement('div');
+  vibeInfo.songs.forEach(song => {
+    const songLink = document.createElement('a');
+    songLink.href = song.url;
+    songLink.target = '_blank';
+    songLink.textContent = song.name;
+    songList.appendChild(songLink);
+  });
+  card.appendChild(songList);
+  
+  board.appendChild(card);
 }
