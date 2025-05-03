@@ -1,126 +1,143 @@
+// Full Vibes Data (includes new categories)
 const fullVibes = {
   desi: {
     songs: [
-      { title: "Jashn-E-Bahara", artist: "A.R. Rahman", cover: "https://i.imgur.com/Qk2cBvC.jpg", link: "https://youtu.be/6mR6Pwyrx_s" },
-      { title: "Gallan Goodiyaan", artist: "Dil Dhadakne Do", cover: "https://i.imgur.com/1LZX7Fb.jpg", link: "https://youtu.be/pnF6n8wO_VY" },
-      { title: "Tum Hi Ho", artist: "Aashiqui 2", cover: "https://i.imgur.com/C2eFL6B.jpg", link: "https://youtu.be/xs7KuvkYftE" },
-      { title: "Dil Dhadakne Do", artist: "Zindagi Na Milegi Dobara", cover: "https://i.imgur.com/7kGGDfa.jpg", link: "https://youtu.be/VeAmk1NYjps" },
-      { title: "Agar Tum Saath Ho", artist: "Tamasha", cover: "https://i.imgur.com/7w7wH9d.jpg", link: "https://youtu.be/s-GhK9jOL48" },
-      { title: "Kal Ho Na Ho", artist: "Kal Ho Na Ho", cover: "https://i.imgur.com/F7a8y9A.jpg", link: "https://youtu.be/Dwb_jb64mKo" }
+      { title: "Jai Jai Shivshankar", artist: "Vishal-Shekhar", cover: "https://i.imgur.com/DtkXWGb.jpg", link: "https://youtu.be/Xc6fROZ7vvE" },
+      { title: "Lungi Dance", artist: "Honey Singh", cover: "https://i.imgur.com/nW91VGg.jpg", link: "https://youtu.be/aJ5ejdyDmx4" },
+      { title: "Dil Dhadakne Do", artist: "Priyanka Chopra, Farhan Akhtar", cover: "https://i.imgur.com/1uBlvzn.jpg", link: "https://youtu.be/Li4Yg0Tay1w" }
     ],
-    layouts: ["Vibrant mandala borders", "Gold foil typography", "Saturated color filter"],
-    colors: ["#E53935","#FFEB3B","#8E24AA"],
-    compliment: "Your desi vibes are on point—rock that look!",
-    songOfDay: { title: "Desi Girl", artist: "Dostana", link: "https://youtu.be/nZpMsxA-TX8" }
+    layouts: ["Indian wedding decor", "Saree-inspired colors", "Bollywood poster style"],
+    colors: ["#D32F2F", "#F44336", "#8BC34A"],
+    compliment: "You're as stunning as a Bollywood star!",
+    songOfDay: { title: "Lungi Dance", artist: "Honey Singh", link: "https://youtu.be/aJ5ejdyDmx4" }
   },
   picnic: {
     songs: [
-      { title: "Better Together", artist: "Jack Johnson", cover: "https://i.imgur.com/4E0N1ho.jpg", link: "https://youtu.be/_fW6cEWckuA" },
-      { title: "Banana Pancakes", artist: "Jack Johnson", cover: "https://i.imgur.com/g1h8Rgw.jpg", link: "https://youtu.be/qW8_rIYL8i4" },
-      { title: "Here Comes the Sun", artist: "The Beatles", cover: "https://i.imgur.com/qw8kxtN.jpg", link: "https://youtu.be/kXnpJYEO6gk" },
-      { title: "Sunflower", artist: "Post Malone", cover: "https://i.imgur.com/ftkPq15.jpg", link: "https://youtu.be/ApXoWvfEYVU" },
-      { title: "I'm Yours", artist: "Jason Mraz", cover: "https://i.imgur.com/7pZmVYF.jpg", link: "https://youtu.be/fRh_vgS2dFE" },
-      { title: "Riptide", artist: "Vance Joy", cover: "https://i.imgur.com/R6qlpIT.jpg", link: "https://youtu.be/uJ_1HMAGb4k" }
+      { title: "Sunflower", artist: "Post Malone", cover: "https://i.imgur.com/q17k0Rf.jpg", link: "https://youtu.be/ApXoWvfEYVU" },
+      { title: "Take It Easy", artist: "Eagles", cover: "https://i.imgur.com/U9QUqBz.jpg", link: "https://youtu.be/4WqfJ0HqJmQ" },
+      { title: "Adventure of a Lifetime", artist: "Coldplay", cover: "https://i.imgur.com/79VX12H.jpg", link: "https://youtu.be/QtXby3twMmI" }
     ],
-    layouts: ["Sunshine lens flare", "Overhead food flatlay", "Muted green filter"],
-    colors: ["#AED581","#FFF176","#FF8A65"],
-    compliment: "You look picnic‑ready—so fresh and vibrant!",
-    songOfDay: { title: "Sunflower", artist: "Post Malone", link: "https://youtu.be/ApXoWvfEYVU" }
+    layouts: ["Nature-inspired vibes", "Picnic basket and blanket arrangement", "Boho chic setup"],
+    colors: ["#64B5F6", "#FFEB3B", "#8D6E63"],
+    compliment: "You brighten up every picnic day!",
+    songOfDay: { title: "Take It Easy", artist: "Eagles", link: "https://youtu.be/4WqfJ0HqJmQ" }
   },
   wedding: {
     songs: [
-      { title: "Tum Jo Aaye", artist: "Once Upon a Time in Mumbaai", cover: "https://i.imgur.com/F7a8y9A.jpg", link: "https://youtu.be/sGJLv8wdRZw" },
-      { title: "Raabta", artist: "Agent Vinod", cover: "https://i.imgur.com/GpXsbYj.jpg", link: "https://youtu.be/kG_mTxw6f8k" },
-      { title: "Laung Laachi", artist: "Laung Laachi", cover: "https://i.imgur.com/BOM8quX.jpg", link: "https://youtu.be/T6I13ou9k3k" },
-      { title: "Pehli Nazar Mein", artist: "Race", cover: "https://i.imgur.com/dwpxfZz.jpg", link: "https://youtu.be/oyXxtALWRM8" },
-      { title: "Madhaniya", artist: "Neha Bhasin", cover: "https://i.imgur.com/WY4hDdD.jpg", link: "https://youtu.be/Du0E2Zgnd8k" },
-      { title: "Tujh Mein Rab Dikhta Hai", artist: "Rab Ne Bana Di Jodi", cover: "https://i.imgur.com/7w7wH9d.jpg", link: "https://youtu.be/R0Iglg9giH0" }
+      { title: "Perfect", artist: "Ed Sheeran", cover: "https://i.imgur.com/UlSSkD0.jpg", link: "https://youtu.be/2Vv-BfVoq4g" },
+      { title: "Marry You", artist: "Bruno Mars", cover: "https://i.imgur.com/fWy90Af.jpg", link: "https://youtu.be/fR74zY2DJ-Q" },
+      { title: "A Thousand Years", artist: "Christina Perri", cover: "https://i.imgur.com/EDcse9B.jpg", link: "https://youtu.be/rtOvBOT3P6M" }
     ],
-    layouts: ["Soft romantic tones", "Fairy light bokeh", "Floral borders"],
-    colors: ["#ffcb6b", "#e8a400", "#ffd53f"],
-    compliment: "You're a wedding masterpiece—look at you shine!",
-    songOfDay: { title: "Tujh Mein Rab Dikhta Hai", artist: "Rab Ne Bana Di Jodi", link: "https://youtu.be/R0Iglg9giH0" }
+    layouts: ["Elegant floral arrangements", "Golden wedding ring accents", "Glittering fairytale lighting"],
+    colors: ["#FFD54F", "#FF7043", "#4CAF50"],
+    compliment: "You're the heart and soul of every wedding!",
+    songOfDay: { title: "Perfect", artist: "Ed Sheeran", link: "https://youtu.be/2Vv-BfVoq4g" }
   },
   happy: {
     songs: [
-      { title: "Happy", artist: "Pharrell Williams", cover: "https://i.imgur.com/d7KikOi.jpg", link: "https://youtu.be/YbEod8f8mnk" },
-      { title: "Walking on Sunshine", artist: "Katrina and the Waves", cover: "https://i.imgur.com/4PnnpB7.jpg", link: "https://youtu.be/iQ7R5yF7FHE" },
-      { title: "Good Life", artist: "OneRepublic", cover: "https://i.imgur.com/JsmJZbX.jpg", link: "https://youtu.be/5qap5aO4i9A" },
-      { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", cover: "https://i.imgur.com/ymQFv1C.jpg", link: "https://youtu.be/OPf0YbXqDm0" },
-      { title: "Can’t Stop the Feeling!", artist: "Justin Timberlake", cover: "https://i.imgur.com/z3UEwVd.jpg", link: "https://youtu.be/ru0K8uYEZWw" }
+      { title: "Happy", artist: "Pharrell Williams", cover: "https://i.imgur.com/YXHbZ16.jpg", link: "https://youtu.be/Yb1cT0hFLbM" },
+      { title: "Can't Stop the Feeling!", artist: "Justin Timberlake", cover: "https://i.imgur.com/ML5XxGd.jpg", link: "https://youtu.be/ru0K8uYEZWw" },
+      { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", cover: "https://i.imgur.com/LWwR9D9.jpg", link: "https://youtu.be/OPf0YbXqDm0" }
     ],
-    layouts: ["Bright and airy theme", "Rainbow-colored accents", "Happy-go-lucky elements"],
-    colors: ["#FFEB3B", "#8BC34A", "#03A9F4"],
-    compliment: "Your happiness shines bright—keep spreading that positivity!",
-    songOfDay: { title: "Happy", artist: "Pharrell Williams", link: "https://youtu.be/YbEod8f8mnk" }
+    layouts: ["Colorful confetti background", "Smiling faces theme", "Positive affirmation quotes"],
+    colors: ["#FFEB3B", "#81C784", "#FF7043"],
+    compliment: "You radiate happiness and joy!",
+    songOfDay: { title: "Happy", artist: "Pharrell Williams", link: "https://youtu.be/Yb1cT0hFLbM" }
   },
   sad: {
     songs: [
-      { title: "Someone Like You", artist: "Adele", cover: "https://i.imgur.com/64zBzXT.jpg", link: "https://youtu.be/hLQl3WQQoQ0" },
-      { title: "Let Her Go", artist: "Passenger", cover: "https://i.imgur.com/vL3J73C.jpg", link: "https://youtu.be/RBumgq5yVrA" },
-      { title: "When I Was Your Man", artist: "Bruno Mars", cover: "https://i.imgur.com/kxdA9t5.jpg", link: "https://youtu.be/aJOTlXhRoaI" },
-      { title: "The Night We Met", artist: "Lord Huron", cover: "https://i.imgur.com/j3d9ts4.jpg", link: "https://youtu.be/2N9VhRV_EHk" },
-      { title: "Skinny Love", artist: "Bon Iver", cover: "https://i.imgur.com/xDPu76s.jpg", link: "https://youtu.be/ssdgFoHLwnk" }
+      { title: "Someone Like You", artist: "Adele", cover: "https://i.imgur.com/XB7gg0t.jpg", link: "https://youtu.be/hLQl3WQQoQ0" },
+      { title: "The Night We Met", artist: "Lord Huron", cover: "https://i.imgur.com/Y5QDCje.jpg", link: "https://youtu.be/2gTkaSxX_xk" },
+      { title: "All I Want", artist: "Kodaline", cover: "https://i.imgur.com/dWxggpB.jpg", link: "https://youtu.be/bbKGVUbi3D8" }
     ],
-    layouts: ["Muted tones and dim lighting", "Solitary landscape imagery", "Minimalistic design"],
-    colors: ["#607D8B", "#B0BEC5", "#90A4AE"],
-    compliment: "Sometimes, it's okay to be sad. Take your time, and you'll heal.",
+    layouts: ["Raindrop patterns", "Dimly lit mood", "Emotional monochrome themes"],
+    colors: ["#757575", "#B0BEC5", "#90A4AE"],
+    compliment: "Your strength shines even in the hardest moments.",
     songOfDay: { title: "Someone Like You", artist: "Adele", link: "https://youtu.be/hLQl3WQQoQ0" }
   },
   friends: {
     songs: [
-      { title: "Lean On Me", artist: "Bill Withers", cover: "https://i.imgur.com/62Z7hnl.jpg", link: "https://youtu.be/fOZ1oZqB6aY" },
-      { title: "Count on Me", artist: "Bruno Mars", cover: "https://i.imgur.com/M5vubnt.jpg", link: "https://youtu.be/LjR2q4P1YOQ" },
-      { title: "With a Little Help From My Friends", artist: "The Beatles", cover: "https://i.imgur.com/YG8avHQ.jpg", link: "https://youtu.be/AT9B9ACwhV0" },
-      { title: "I'll Be There for You", artist: "The Rembrandts", cover: "https://i.imgur.com/K3HZ1lT.jpg", link: "https://youtu.be/tpqtY7J3GiM" },
-      { title: "Stand by Me", artist: "Ben E. King", cover: "https://i.imgur.com/jYAGd5m.jpg", link: "https://youtu.be/hdJl9XzzXz0" }
+      { title: "Lean On Me", artist: "Bill Withers", cover: "https://i.imgur.com/hWsiwzE.jpg", link: "https://youtu.be/fOZqR8X2lF8" },
+      { title: "Count On Me", artist: "Bruno Mars", cover: "https://i.imgur.com/5kseuUP.jpg", link: "https://youtu.be/MReM6tYQ3so" },
+      { title: "With a Little Help From My Friends", artist: "The Beatles", cover: "https://i.imgur.com/LS6ft4S.jpg", link: "https://youtu.be/10uGOQOBqFk" }
     ],
-    layouts: ["Friendship themed posters", "Polaroid frames", "Laughing candid photos"],
-    colors: ["#FF9800", "#FF5722", "#795548"],
-    compliment: "True friends are always there—your bond is unbreakable!",
-    songOfDay: { title: "Lean On Me", artist: "Bill Withers", link: "https://youtu.be/fOZ1oZqB6aY" }
+    layouts: ["Group photos of friends", "Friendship quote designs", "Puzzle piece designs symbolizing unity"],
+    colors: ["#64B5F6", "#FFEB3B", "#FF9800"],
+    compliment: "True friendship is a rare and beautiful gift.",
+    songOfDay: { title: "Lean On Me", artist: "Bill Withers", link: "https://youtu.be/fOZqR8X2lF8" }
   },
   aesthetic: {
     songs: [
-      { title: "Electric Feel", artist: "MGMT", cover: "https://i.imgur.com/TsoGv67.jpg", link: "https://youtu.be/MxvLO68KqYs" },
-      { title: "Sweater Weather", artist: "The Neighbourhood", cover: "https://i.imgur.com/xB9wqSH.jpg", link: "https://youtu.be/7zYqGJw4pFw" },
-      { title: "Vintage", artist: "The Good Life", cover: "https://i.imgur.com/JY0mlJd.jpg", link: "https://youtu.be/sql9j_UbEqI" },
-      { title: "Sunset Lover", artist: "Petit Biscuit", cover: "https://i.imgur.com/tItNN04.jpg", link: "https://youtu.be/ZTCOtmYF4js" },
-      { title: "Breezeblocks", artist: "Alt-J", cover: "https://i.imgur.com/GL0ct9N.jpg", link: "https://youtu.be/OD7-4D0G7Qw" }
+      { title: "Blinding Lights", artist: "The Weeknd", cover: "https://i.imgur.com/92zNq95.jpg", link: "https://youtu.be/4NRyFC8Go-k" },
+      { title: "Sunflower", artist: "Post Malone", cover: "https://i.imgur.com/wJQvhBf.jpg", link: "https://youtu.be/ApXoWvfEYVU" },
+      { title: "Levitating", artist: "Dua Lipa", cover: "https://i.imgur.com/0O94ZYd.jpg", link: "https://youtu.be/TfG01leKHLo" }
     ],
-    layouts: ["Pastel gradients", "Soft textures and vintage feel", "Aesthetic corner shots"],
-    colors: ["#C5CAE9", "#F48FB1", "#B3E5FC"],
-    compliment: "You embody aesthetic beauty—everything about you is on point!",
-    songOfDay: { title: "Electric Feel", artist: "MGMT", link: "https://youtu.be/MxvLO68KqYs" }
+    layouts: ["Soft pastel background", "Polaroid photo display", "Minimalist design"],
+    colors: ["#FFC107", "#FF9800", "#FF5722"],
+    compliment: "You're glowing with aesthetic vibes!",
+    songOfDay: { title: "Blinding Lights", artist: "The Weeknd", link: "https://youtu.be/4NRyFC8Go-k" }
   }
 };
 
-// Generate the full vibe
+let selectedImage = null;
+
+// Image Upload and Preview
+const imageInput = document.getElementById("imageInput");
+const imagePreview = document.getElementById("imagePreview");
+
+imageInput.addEventListener("change", function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      selectedImage = e.target.result;
+      imagePreview.innerHTML = `<img src="${selectedImage}" alt="Uploaded Image" style="width: 100%; max-width: 400px; border-radius: 10px;">`;
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+// Generate the Full Vibe Based on the Selected Category
 function generateFullVibe() {
   const categorySelect = document.getElementById("categorySelect");
   const selectedCategory = categorySelect.value;
   const vibe = fullVibes[selectedCategory];
   const vibeContainer = document.getElementById("fullVibe");
 
+  if (!selectedCategory) {
+    return alert("Please select a vibe category.");
+  }
+
   vibeContainer.innerHTML = `
     <h2>${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Vibe</h2>
-    <div class="section"><h4>Song Recommendations</h4>
+    
+    <!-- Display Image if Uploaded -->
+    ${selectedImage ? `<img src="${selectedImage}" alt="User's Picture" style="width: 100%; max-width: 400px; border-radius: 10px;">` : ""}
+    
+    <div class="section">
+      <h4>Song Recommendations</h4>
       <ul>
         ${vibe.songs.map(song => `<li><a href="${song.link}" target="_blank">${song.title} by ${song.artist}<img src="${song.cover}" alt="${song.title}" /></a></li>`).join("")}
       </ul>
     </div>
-    <div class="section"><h4>Layout Ideas</h4>
+    <div class="section">
+      <h4>Layout Ideas</h4>
       <ul>
         ${vibe.layouts.map(layout => `<li>${layout}</li>`).join("")}
       </ul>
     </div>
-    <div class="section"><h4>Vibe Colors</h4>
-      ${vibe.colors.map(c => `<span class="color-box" style="background-color:${c}"></span>`).join("")}
+    <div class="section">
+      <h4>Vibe Colors</h4>
+      <div>
+        ${vibe.colors.map(c => `<span class="color-box" style="background-color:${c}"></span>`).join("")}
+      </div>
     </div>
-    <div class="section"><h4>Compliment</h4>
+    <div class="section">
+      <h4>Compliment</h4>
       <p>${vibe.compliment}</p>
     </div>
-    <div class="section"><h4>Song of the Day</h4>
+    <div class="section">
+      <h4>Song of the Day</h4>
       <a href="${vibe.songOfDay.link}" target="_blank">${vibe.songOfDay.title} by ${vibe.songOfDay.artist}</a>
     </div>
   `;
