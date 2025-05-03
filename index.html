@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeMatch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Matcher</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to VibeMatch</h1>
-            <p>Find the perfect songs and mood for your Instagram stories!</p>
-        </header>
-        
-        <section class="mood-section">
-            <h2>Pick a Mood</h2>
-            <div class="mood-buttons">
-                <button onclick="showRecommendations('happy')">Happy</button>
-                <button onclick="showRecommendations('sad')">Sad</button>
-                <button onclick="showRecommendations('birthday')">Birthday</button>
-                <button onclick="showRecommendations('picnic')">Picnic</button>
-                <button onclick="showRecommendations('aesthetic')">Aesthetic</button>
-                <button onclick="showRecommendations('desi')">Desi</button>
-                <button onclick="getRandomVibe()">Get My Vibe</button>
-            </div>
-        </section>
 
-        <section id="recommendations">
-            <h2>Your Recommendations</h2>
-            <div id="song-recommendations">
-                <!-- Song recommendations will be shown here -->
-            </div>
-        </section>
+  <h1>Vibe Matcher</h1>
 
-        <footer>
-            <p>&copy; 2025 VibeMatch. All rights reserved.</p>
-        </footer>
-    </div>
+  <label for="categorySelect">Choose a vibe category:</label>
+  <select id="categorySelect">
+    <option value="desi">Desi</option>
+    <option value="picnic">Picnic</option>
+    <option value="wedding">Wedding</option>
+    <option value="happy">Happy</option>
+    <option value="sad">Sad</option>
+    <option value="friends">Friends</option>
+    <option value="aesthetic">Aesthetic</option>
+  </select>
 
-    <script src="script.js"></script>
+  <button onclick="generateFullVibe()">Generate Vibe</button>
+
+  <div id="fullVibe"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
