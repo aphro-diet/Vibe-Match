@@ -1,50 +1,87 @@
-const fullVibes = {
-  desi: {
-    songs: [
-      { title: "Jashn-E-Bahara", artist: "A.R. Rahman", cover: "https://i.imgur.com/Qk2cBvC.jpg", link: "https://youtu.be/6mR6Pwyrx_s" },
-      { title: "Gallan Goodiyaan", artist: "Dil Dhadakne Do", cover: "https://i.imgur.com/1LZX7Fb.jpg", link: "https://youtu.be/pnF6n8wO_VY" }
-    ],
-    layouts: ["Vibrant mandala borders", "Gold foil typography", "Saturated color filter"],
-    colors: ["#E53935","#FFEB3B","#8E24AA"],
-    compliment: "Your desi vibes are on point—rock that look!",
-    songOfDay: { title: "Desi Girl", artist: "Dostana", link: "https://youtu.be/nZpMsxA-TX8" }
-  },
-  // ... similarly define for sari, western, friends, wedding, etc.
-  picnic: {
-    songs: [
-      { title: "Better Together", artist: "Jack Johnson", cover: "https://i.imgur.com/4E0N1ho.jpg", link: "https://youtu.be/_fW6cEWckuA" },
-      { title: "Banana Pancakes", artist: "Jack Johnson", cover: "https://i.imgur.com/g1h8Rgw.jpg", link: "https://youtu.be/qW8_rIYL8i4" }
-    ],
-    layouts: ["Sunshine lens flare", "Overhead food flatlay", "Muted green filter"],
-    colors: ["#AED581","#FFF176","#FF8A65"],
-    compliment: "You look picnic‑ready—so fresh and vibrant!",
-    songOfDay: { title: "Sunflower", artist: "Post Malone", link: "https://youtu.be/ApXoWvfEYVU" }
-  }
+const moodData = {
+  happy: [
+    {
+      title: "Happy – Pharrell Williams",
+      img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Pharrell_Williams_-_Happy.jpg/220px-Pharrell_Williams_-_Happy.jpg",
+      link: "https://www.youtube.com/watch?v=ZbZSe6N_BXs"
+    },
+    {
+      title: "Good Time – Owl City & Carly Rae Jepsen",
+      img: "https://upload.wikimedia.org/wikipedia/en/1/13/GoodTimeOwlCity.jpg",
+      link: "https://www.youtube.com/watch?v=H7HmzwI67ec"
+    }
+  ],
+  sad: [
+    {
+      title: "Let Her Go – Passenger",
+      img: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/LetHerGo.jpg/220px-LetHerGo.jpg",
+      link: "https://www.youtube.com/watch?v=RBumgq5yVrA"
+    },
+    {
+      title: "Someone Like You – Adele",
+      img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Adele_-_Someone_Like_You.png/220px-Adele_-_Someone_Like_You.png",
+      link: "https://www.youtube.com/watch?v=hLQl3WQQoQ0"
+    }
+  ],
+  birthday: [
+    {
+      title: "Birthday – Katy Perry",
+      img: "https://upload.wikimedia.org/wikipedia/en/f/f4/Katy_Perry_-_Birthday.png",
+      link: "https://www.youtube.com/watch?v=njYDPZOLXJs"
+    },
+    {
+      title: "Birthday – Anne-Marie",
+      img: "https://upload.wikimedia.org/wikipedia/en/4/4c/Anne-Marie_-_Birthday.png",
+      link: "https://www.youtube.com/watch?v=Li5E1JIgNuk"
+    }
+  ],
+  picnic: [
+    {
+      title: "Banana Pancakes – Jack Johnson",
+      img: "https://upload.wikimedia.org/wikipedia/en/6/6b/In_Between_Dreams.jpg",
+      link: "https://www.youtube.com/watch?v=m-v-LGOfaKo"
+    },
+    {
+      title: "Sunflower – Post Malone",
+      img: "https://upload.wikimedia.org/wikipedia/en/8/80/Post_Malone_and_Swae_Lee_-_Sunflower.png",
+      link: "https://www.youtube.com/watch?v=ApXoWvfEYVU"
+    }
+  ],
+  aesthetic: [
+    {
+      title: "Golden Hour – JVKE",
+      img: "https://upload.wikimedia.org/wikipedia/en/1/1e/JVKE_-_Golden_Hour.png",
+      link: "https://www.youtube.com/watch?v=3JZ4pnNtyxQ"
+    },
+    {
+      title: "Death Bed – Powfu",
+      img: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Powfu_-_Death_Bed.png/220px-Powfu_-_Death_Bed.png",
+      link: "https://www.youtube.com/watch?v=jJPMnTXl63E"
+    }
+  ],
+  desi: [
+    {
+      title: "Jashn-E-Bahaaraa – Jodhaa Akbar",
+      img: "https://upload.wikimedia.org/wikipedia/en/d/d7/Jodhaa_Akbar.jpg",
+      link: "https://www.youtube.com/watch?v=4h1WFyOQv0Y"
+    },
+    {
+      title: "Gallan Goodiyan – Dil Dhadakne Do",
+      img: "https://upload.wikimedia.org/wikipedia/en/1/1b/Dil_Dhadakne_Do.jpg",
+      link: "https://www.youtube.com/watch?v=jCEdTq3j-0U"
+    }
+  ]
 };
 
-function generateFullVibe() {
-  const category = document.getElementById("categorySelect").value;
-  if (!category) return alert("Please select a category.");
-
-  const vibe = fullVibes[category];
-  const container = document.getElementById("fullVibe");
-  container.innerHTML = `
-    <h2>${category.charAt(0).toUpperCase()+category.slice(1)} Vibe Match</h2>
-    <p class="compliment">${vibe.compliment}</p>
-    <h3>Song of the Day: <a href="${vibe.songOfDay.link}" target="_blank">${vibe.songOfDay.title} by ${vibe.songOfDay.artist}</a></h3>
-    <div class="section"><h4>Recommended Songs</h4>
-      ${vibe.songs.map(s => `
-        <div class="song-card">
-          <img src="${s.cover}" alt="${s.title}">
-          <p>${s.title} - ${s.artist}</p>
-          <a href="${s.link}" target="_blank">▶ Listen</a>
-        </div>`).join("")}
-    </div>
-    <div class="section"><h4>Layout Ideas</h4>
-      <ul>${vibe.layouts.map(l=>`<li>${l}</li>`).join("")}</ul>
-    </div>
-    <div class="section"><h4>Color Palette</h4>
-      ${vibe.colors.map(c=>`<div class="color-box" style="background:${c}"></div>`).join("")}
-    </div>
-  `;
+function showRecommendations(mood) {
+  const section = document.getElementById('recommendations');
+  section.innerHTML = '';
+  const songs = moodData[mood];
+  songs.forEach(song => {
+    section.innerHTML += `
+      <div class="song-card">
+        <img src="${song.img}" alt="${song.title}">
+        <p><a href="${song.link}" target="_blank">${song.title}</a></p>
+      </div>`;
+  });
 }
