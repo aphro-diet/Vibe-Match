@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeMatch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>VibeMatch</h1>
+    <p>Your aesthetic moodboard for Instagram stories</p>
+  </header>
+
+  <section class="compliment">
+    <h2>Hey beautiful!</h2>
+    <p id="compliment-text">You're glowing today. Here's a song just for you!</p>
+  </section>
+
+  <section class="filters">
+    <h2>Choose Your Mood</h2>
+    <div class="buttons">
+      <button onclick="filterContent('happy')">Happy</button>
+      <button onclick="filterContent('sad')">Sad</button>
+      <button onclick="filterContent('birthday')">Birthday</button>
+      <button onclick="filterContent('friends')">Friends</button>
+      <button onclick="filterContent('aesthetic')">Aesthetic</button>
+      <button onclick="filterContent('picnic')">Picnic</button>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2>Song Recommendations</h2>
+    <div id="song-container"></div>
+
+    <h2>Layout Ideas</h2>
+    <ul>
+      <li>Minimalist with clean font and muted background</li>
+      <li>Bold colors with collage style images</li>
+      <li>Overlay text with blur effect</li>
+    </ul>
+
+    <h2>Color Schemes</h2>
+    <div class="color-boxes">
+      <div class="color" style="background-color: #ffc0cb;"></div>
+      <div class="color" style="background-color: #a0e7e5;"></div>
+      <div class="color" style="background-color: #b4f8c8;"></div>
+      <div class="color" style="background-color: #fbc4ab;"></div>
+    </div>
+
+    <h2>Picture Ideas & Poses</h2>
+    <div class="pose-grid">
+      <img src="https://i.imgur.com/uOZP0dL.jpg" alt="Birthday Pose" />
+      <img src="https://i.imgur.com/lZkRpxT.jpg" alt="Sad Pose" />
+      <img src="https://i.imgur.com/FsjloBa.jpg" alt="Friends Pose" />
+      <img src="https://i.imgur.com/T7u7I4E.jpg" alt="Aesthetic Pose" />
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with love by VibeMatch</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
