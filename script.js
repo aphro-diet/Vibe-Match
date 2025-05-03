@@ -1,60 +1,61 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const compliments = [
-    "You're glowing today!",
-    "You deserve all the good vibes!",
-    "Your presence lights up the vibe!",
-    "Aesthetic soul, meet your match.",
-    "Hey beautiful, here's your vibe!"
-  ];
+const vibes = {
+  happy: [
+    {
+      title: "Good Day - Nappy Roots",
+      cover: "https://upload.wikimedia.org/wikipedia/en/5/52/Nappyrootsgoodday.jpg",
+      link: "https://www.youtube.com/watch?v=6WJFjXtHcy4"
+    },
+    {
+      title: "Walking on Sunshine - Katrina",
+      cover: "https://upload.wikimedia.org/wikipedia/en/7/7a/Walking_on_Sunshine.jpg",
+      link: "https://www.youtube.com/watch?v=iPUmE-tne5U"
+    }
+  ],
+  sad: [
+    {
+      title: "Let Her Go - Passenger",
+      cover: "https://upload.wikimedia.org/wikipedia/en/f/f7/LetHerGo.jpg",
+      link: "https://www.youtube.com/watch?v=RBumgq5yVrA"
+    }
+  ],
+  birthday: [
+    {
+      title: "Birthday - Katy Perry",
+      cover: "https://upload.wikimedia.org/wikipedia/en/4/4b/Katy_Perry_-_Birthday.png",
+      link: "https://www.youtube.com/watch?v=3GwjfUFyY6M"
+    }
+  ],
+  aesthetic: [
+    {
+      title: "Coffee - beabadoobee",
+      cover: "https://i1.sndcdn.com/artworks-000242914675-zs1s4z-t500x500.jpg",
+      link: "https://www.youtube.com/watch?v=J3uh3r3bDG4"
+    }
+  ],
+  friends: [
+    {
+      title: "Count on Me - Bruno Mars",
+      cover: "https://upload.wikimedia.org/wikipedia/en/d/d1/Bruno_Mars_-_Doo-Wops_%26_Hooligans.png",
+      link: "https://www.youtube.com/watch?v=yJYXItns2ik"
+    }
+  ]
+};
 
-  const recommendedSongs = {
-    Happy: [
-      { title: "Sunflower", artist: "Post Malone", cover: "https://i.scdn.co/image/ab67616d00001e021b4e5f2e6eb768d5190d5f3f", link: "https://open.spotify.com/track/3KkXRkHbMCARz0aVfEt68P" },
-      { title: "Good as Hell", artist: "Lizzo", cover: "https://i.scdn.co/image/ab67616d0000b2734309d3b8428bbcb490f6dfdc", link: "https://open.spotify.com/track/58DOMCS6U2xjwvjZ9e4RvG" }
-    ],
-    Sad: [
-      { title: "Let Her Go", artist: "Passenger", cover: "https://i.scdn.co/image/ab67616d0000b273da9b1c2e84ec6f3d4e4fce3c", link: "https://open.spotify.com/track/2tUBqZZ2cTohHf8b4J3R9c" },
-      { title: "All I Want", artist: "Kodaline", cover: "https://i.scdn.co/image/ab67616d0000b273efb8e0635cbe5db76b9be26d", link: "https://open.spotify.com/track/6Gg1gjgKiZt3sdtA5d6EwM" }
-    ],
-    Birthday: [
-      { title: "Birthday", artist: "Katy Perry", cover: "https://i.scdn.co/image/ab67616d0000b2732f432bd541f0b69220866fc4", link: "https://open.spotify.com/track/2xJzPyzpHefrLoj1yQ1C7w" },
-      { title: "In Da Club", artist: "50 Cent", cover: "https://i.scdn.co/image/ab67616d0000b273b0b0e64d3ac0e146c93c4c18", link: "https://open.spotify.com/track/6rUp7v3l8yC4TKxAAR5Bmx" }
-    ]
-  };
-
-  const moodSelect = document.getElementById('mood-select');
-  const songContainer = document.getElementById('songs');
-  const complimentBox = document.getElementById('compliment');
-
-  function updateSongs() {
-    const mood = moodSelect.value;
-    const songs = recommendedSongs[mood] || [];
-    songContainer.innerHTML = '';
-    songs.forEach(song => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <img src="${song.cover}" alt="${song.title}">
-        <div class="player">
-          <img src="${song.cover}" alt="cover">
-          <a href="${song.link}" target="_blank">${song.title} - ${song.artist}</a>
-        </div>
-      `;
-      songContainer.appendChild(card);
-    });
-  }
-
-  function setRandomCompliment() {
-    const index = Math.floor(Math.random() * compliments.length);
-    complimentBox.textContent = compliments[index];
-  }
-
-  moodSelect.addEventListener('change', () => {
-    updateSongs();
-    setRandomCompliment();
+function showVibes(mood) {
+  const container = document.getElementById('vibeResults');
+  container.innerHTML = '';
+  vibes[mood].forEach(song => {
+    container.innerHTML += `
+      <div class="vibe-card">
+        <img src="${song.cover}" alt="${song.title}" />
+        <p>${song.title}</p>
+        <a href="${song.link}" target="_blank">Listen</a>
+      </div>
+    `;
   });
+}
 
-  // Load initial values
-  updateSongs();
-  setRandomCompliment();
-});
+function showMoodBoard() {
+  const board = document.getElementById('moodBoard');
+  board.classList.toggle('hidden');
+}
