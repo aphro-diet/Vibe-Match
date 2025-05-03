@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vibe Matcher</title>
+  <title>Vibe Generator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Vibe Matcher</h1>
+  <!-- Image Upload Section -->
+  <div class="image-upload">
+    <h3>Upload Your Picture</h3>
+    <input type="file" id="imageInput" accept="image/*">
+    <div id="imagePreview"></div>
+  </div>
 
-  <label for="categorySelect">Choose a vibe category:</label>
-  <select id="categorySelect">
-    <option value="desi">Desi</option>
-    <option value="picnic">Picnic</option>
-    <option value="wedding">Wedding</option>
-    <option value="happy">Happy</option>
-    <option value="sad">Sad</option>
-    <option value="friends">Friends</option>
-    <option value="aesthetic">Aesthetic</option>
-  </select>
+  <!-- Vibe Category Selection -->
+  <div>
+    <label for="categorySelect">Choose a Vibe:</label>
+    <select id="categorySelect">
+      <option value="">Select a Vibe</option>
+      <option value="desi">Desi</option>
+      <option value="picnic">Picnic</option>
+      <option value="wedding">Wedding</option>
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="friends">Friends</option>
+      <option value="aesthetic">Aesthetic</option>
+    </select>
+    <button onclick="generateFullVibe()">Generate Vibe</button>
+  </div>
 
-  <button onclick="generateFullVibe()">Generate Vibe</button>
-
+  <!-- Generated Vibe Information -->
   <div id="fullVibe"></div>
 
   <script src="script.js"></script>
