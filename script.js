@@ -1,87 +1,66 @@
 const moodData = {
-  happy: [
-    {
-      title: "Happy – Pharrell Williams",
-      img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Pharrell_Williams_-_Happy.jpg/220px-Pharrell_Williams_-_Happy.jpg",
-      link: "https://www.youtube.com/watch?v=ZbZSe6N_BXs"
+    happy: {
+        songs: [
+            { title: "Happy", artist: "Pharrell Williams", album: "G I R L", image: "https://upload.wikimedia.org/wikipedia/en/7/73/Pharrell_Williams_-_G_I_R_L.png", link: "https://www.youtube.com/watch?v=ZbZSe6N_BXs" },
+            { title: "Can't Stop the Feeling!", artist: "Justin Timberlake", album: "Trolls (Original Soundtrack)", image: "https://upload.wikimedia.org/wikipedia/en/3/37/Trolls_soundtrack_cover.jpg", link: "https://www.youtube.com/watch?v=ru0K8uYEZWw" }
+        ]
     },
-    {
-      title: "Good Time – Owl City & Carly Rae Jepsen",
-      img: "https://upload.wikimedia.org/wikipedia/en/1/13/GoodTimeOwlCity.jpg",
-      link: "https://www.youtube.com/watch?v=H7HmzwI67ec"
-    }
-  ],
-  sad: [
-    {
-      title: "Let Her Go – Passenger",
-      img: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/LetHerGo.jpg/220px-LetHerGo.jpg",
-      link: "https://www.youtube.com/watch?v=RBumgq5yVrA"
+    sad: {
+        songs: [
+            { title: "Someone Like You", artist: "Adele", album: "21", image: "https://upload.wikimedia.org/wikipedia/en/a/ab/Adele_-_21.png", link: "https://www.youtube.com/watch?v=hLQl3WQQoRk" },
+            { title: "The Night We Met", artist: "Lord Huron", album: "Strange Trails", image: "https://upload.wikimedia.org/wikipedia/en/2/28/Lord_Huron_-_Strange_Trails.png", link: "https://www.youtube.com/watch?v=zi1X62tX7L4" }
+        ]
     },
-    {
-      title: "Someone Like You – Adele",
-      img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Adele_-_Someone_Like_You.png/220px-Adele_-_Someone_Like_You.png",
-      link: "https://www.youtube.com/watch?v=hLQl3WQQoQ0"
-    }
-  ],
-  birthday: [
-    {
-      title: "Birthday – Katy Perry",
-      img: "https://upload.wikimedia.org/wikipedia/en/f/f4/Katy_Perry_-_Birthday.png",
-      link: "https://www.youtube.com/watch?v=njYDPZOLXJs"
+    birthday: {
+        songs: [
+            { title: "Birthday", artist: "Katy Perry", album: "Prism", image: "https://upload.wikimedia.org/wikipedia/en/3/34/Katy_Perry_-_Prism_%28album_cover%29.png", link: "https://www.youtube.com/watch?v=kNku9xFJ0UQ" },
+            { title: "Happy Birthday", artist: "Stevie Wonder", album: "Stevie Wonder's Original Musiquarium I", image: "https://upload.wikimedia.org/wikipedia/en/6/6e/Stevie_Wonder_-_Musiquarium.png", link: "https://www.youtube.com/watch?v=KItk5fQvIfE" }
+        ]
     },
-    {
-      title: "Birthday – Anne-Marie",
-      img: "https://upload.wikimedia.org/wikipedia/en/4/4c/Anne-Marie_-_Birthday.png",
-      link: "https://www.youtube.com/watch?v=Li5E1JIgNuk"
-    }
-  ],
-  picnic: [
-    {
-      title: "Banana Pancakes – Jack Johnson",
-      img: "https://upload.wikimedia.org/wikipedia/en/6/6b/In_Between_Dreams.jpg",
-      link: "https://www.youtube.com/watch?v=m-v-LGOfaKo"
+    picnic: {
+        songs: [
+            { title: "Walking on Sunshine", artist: "Katrina and The Waves", album: "Katrina and The Waves", image: "https://upload.wikimedia.org/wikipedia/en/0/0a/Katrina_and_The_Waves_-_Walking_on_Sunshine.jpg", link: "https://www.youtube.com/watch?v=iPUmE-tne5U" },
+            { title: "Here Comes the Sun", artist: "The Beatles", album: "Abbey Road", image: "https://upload.wikimedia.org/wikipedia/en/4/42/The_Beatles_-_Abbey_Road.jpg", link: "https://www.youtube.com/watch?v=KQetemT1sWc" }
+        ]
     },
-    {
-      title: "Sunflower – Post Malone",
-      img: "https://upload.wikimedia.org/wikipedia/en/8/80/Post_Malone_and_Swae_Lee_-_Sunflower.png",
-      link: "https://www.youtube.com/watch?v=ApXoWvfEYVU"
-    }
-  ],
-  aesthetic: [
-    {
-      title: "Golden Hour – JVKE",
-      img: "https://upload.wikimedia.org/wikipedia/en/1/1e/JVKE_-_Golden_Hour.png",
-      link: "https://www.youtube.com/watch?v=3JZ4pnNtyxQ"
+    aesthetic: {
+        songs: [
+            { title: "Sunflower", artist: "Post Malone & Swae Lee", album: "Spider-Man: Into the Spider-Verse", image: "https://upload.wikimedia.org/wikipedia/en/0/02/Post_Malone_%26_Swae_Lee_-_Sunflower.jpg", link: "https://www.youtube.com/watch?v=ApXoWvfEYVU" },
+            { title: "Ocean Eyes", artist: "Billie Eilish", album: "Dont Smile at Me", image: "https://upload.wikimedia.org/wikipedia/en/a/ab/Billie_Eilish_-_Dont_Smile_at_Me.png", link: "https://www.youtube.com/watch?v=viimfQi_pUw" }
+        ]
     },
-    {
-      title: "Death Bed – Powfu",
-      img: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Powfu_-_Death_Bed.png/220px-Powfu_-_Death_Bed.png",
-      link: "https://www.youtube.com/watch?v=jJPMnTXl63E"
+    desi: {
+        songs: [
+            { title: "Tum Hi Ho", artist: "Arijit Singh", album: "Aashiqui 2", image: "https://upload.wikimedia.org/wikipedia/en/a/a2/Aashiqui_2_album_cover.jpg", link: "https://www.youtube.com/watch?v=7vRHbptPmGE" },
+            { title: "Tujh Mein Rab Dikhta Hai", artist: "Roop Kumar Rathod", album: "Rab Ne Bana Di Jodi", image: "https://upload.wikimedia.org/wikipedia/en/1/1d/Rab_Ne_Bana_Di_Jodi.jpg", link: "https://www.youtube.com/watch?v=owF1bKST_Tg" }
+        ]
     }
-  ],
-  desi: [
-    {
-      title: "Jashn-E-Bahaaraa – Jodhaa Akbar",
-      img: "https://upload.wikimedia.org/wikipedia/en/d/d7/Jodhaa_Akbar.jpg",
-      link: "https://www.youtube.com/watch?v=4h1WFyOQv0Y"
-    },
-    {
-      title: "Gallan Goodiyan – Dil Dhadakne Do",
-      img: "https://upload.wikimedia.org/wikipedia/en/1/1b/Dil_Dhadakne_Do.jpg",
-      link: "https://www.youtube.com/watch?v=jCEdTq3j-0U"
-    }
-  ]
 };
 
 function showRecommendations(mood) {
-  const section = document.getElementById('recommendations');
-  section.innerHTML = '';
-  const songs = moodData[mood];
-  songs.forEach(song => {
-    section.innerHTML += `
-      <div class="song-card">
-        <img src="${song.img}" alt="${song.title}">
-        <p><a href="${song.link}" target="_blank">${song.title}</a></p>
-      </div>`;
-  });
+    const recommendationsDiv = document.getElementById("song-recommendations");
+    recommendationsDiv.innerHTML = ""; // Clear any previous recommendations
+
+    if (moodData[mood]) {
+        moodData[mood].songs.forEach(song => {
+            const songCard = document.createElement("div");
+            songCard.classList.add("song-card");
+
+            songCard.innerHTML = `
+                <img src="${song.image}" alt="${song.title} album cover">
+                <h3>${song.title}</h3>
+                <p>${song.artist}</p>
+                <a href="${song.link}" target="_blank">Listen on YouTube</a>
+            `;
+            recommendationsDiv.appendChild(songCard);
+        });
+    } else {
+        recommendationsDiv.innerHTML = "<p>No recommendations available for this mood.</p>";
+    }
+}
+
+function getRandomVibe() {
+    const moods = Object.keys(moodData);
+    const randomMood = moods[Math.floor(Math.random() * moods.length)];
+    showRecommendations(randomMood);
 }
