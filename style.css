@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f8f9fa;
+  background: #fafafa;
   color: #333;
   text-align: center;
   padding: 50px;
@@ -54,60 +54,70 @@ button:hover {
   margin-bottom: 40px;
 }
 
-input[type="file"] {
-  margin-top: 10px;
-}
-
+/* Mood board grid */
 .board {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
+/* Card container with subtle gradient */
 .card {
-  background-color: #fff;
+  background: linear-gradient(135deg, #fff0f6, #f3e5f5);
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
+/* Image at top */
 .card img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
+/* Title */
 .card h3 {
-  margin: 10px 0;
+  margin-bottom: 15px;
   color: #8E24AA;
 }
 
+/* Swatches container */
 .card .colors {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
+/* Bigger, borderless swatches */
 .card .color-box {
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  transition: transform 0.3s;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card .color-box:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
+/* Song links list */
 .card a {
-  color: #FF4081;
+  display: block;
+  color: #6A1B9A;
   text-decoration: none;
+  margin: 8px 0;
+  font-weight: 500;
 }
 
 .card a:hover {
-  color: #6A1B9A;
+  text-decoration: underline;
+  color: #FF4081;
 }
-
