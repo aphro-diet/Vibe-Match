@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VibeMatch</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeMatch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>VibeMatch</h1>
-    <p>Your all‑in‑one photo‑to‑vibe recommender</p>
-  </header>
+    <div class="container">
+        <header>
+            <h1>Welcome to VibeMatch</h1>
+            <p>Find the perfect songs and mood for your Instagram stories!</p>
+        </header>
+        
+        <section class="mood-section">
+            <h2>Pick a Mood</h2>
+            <div class="mood-buttons">
+                <button onclick="showRecommendations('happy')">Happy</button>
+                <button onclick="showRecommendations('sad')">Sad</button>
+                <button onclick="showRecommendations('birthday')">Birthday</button>
+                <button onclick="showRecommendations('picnic')">Picnic</button>
+                <button onclick="showRecommendations('aesthetic')">Aesthetic</button>
+                <button onclick="showRecommendations('desi')">Desi</button>
+                <button onclick="getRandomVibe()">Get My Vibe</button>
+            </div>
+        </section>
 
-  <section class="upload-section">
-    <h2>1. Upload Your Photo</h2>
-    <input type="file" id="photoInput" accept="image/*">
-  </section>
+        <section id="recommendations">
+            <h2>Your Recommendations</h2>
+            <div id="song-recommendations">
+                <!-- Song recommendations will be shown here -->
+            </div>
+        </section>
 
-  <section class="category-section">
-    <h2>2. Choose a Category</h2>
-    <select id="categorySelect">
-      <option value="" disabled selected>Select category</option>
-      <option value="desi">Desi / Traditional</option>
-      <option value="sari">Sari / Ethnic</option>
-      <option value="western">Western / Casual</option>
-      <option value="friends">Friends / Group</option>
-      <option value="wedding">Wedding / Celebration</option>
-      <option value="birthday">Birthday</option>
-      <option value="picnic">Picnic / Outdoors</option>
-      <option value="aesthetic">Aesthetic / Moody</option>
-      <option value="happy">Happy / Smiling</option>
-      <option value="sad">Sad / Moody</option>
-      <option value="romantic">Romantic</option>
-      <option value="adventure">Adventure</option>
-    </select>
-    <button onclick="generateFullVibe()">Get My Vibe</button>
-  </section>
+        <footer>
+            <p>&copy; 2025 VibeMatch. All rights reserved.</p>
+        </footer>
+    </div>
 
-  <section id="fullVibe" class="full-vibe">
-    <!-- All recommendations will render here -->
-  </section>
-
-  <footer>
-    <p>VibeMatch © 2025</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
