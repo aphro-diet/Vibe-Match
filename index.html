@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeMatch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VibeMatch</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>VibeMatch</h1>
-        <p>Find your perfect song and mood for your Instagram story!</p>
-    </header>
+  <header>
+    <h1>VibeMatch</h1>
+    <p>Your aesthetic vibe assistant for stories and moods</p>
+  </header>
 
-    <!-- Background video -->
-    <div class="background-video">
-        <video autoplay muted loop id="background-video">
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-        </video>
+  <!-- Background video -->
+  <div class="background-video">
+    <video autoplay muted loop id="background-video">
+      <source src="https://cdn.pixabay.com/vimeo/322507740/Blue%20Sunset%20Loop%20-%205%20SEC.mp4?width=1280&hash=5e3f83e86560158d82999b3f1f3b2995fc7a2a9f" type="video/mp4">
+    </video>
+  </div>
+
+  <section class="compliment-box" id="complimentBox">
+    <p id="complimentText">You're beautiful today. Here's a vibe just for you.</p>
+  </section>
+
+  <section class="mood-selector">
+    <h2>Select Your Mood</h2>
+    <div class="buttons">
+      <button onclick="showVibes('birthday')">Birthday</button>
+      <button onclick="showVibes('sad')">Sad</button>
+      <button onclick="showVibes('happy')">Happy</button>
+      <button onclick="showVibes('energetic')">Energetic</button>
+      <button onclick="showVibes('romantic')">Romantic</button>
+      <button onclick="showVibes('relaxed')">Relaxed</button>
+      <button onclick="showVibes('friends')">Friends</button>
+      <button onclick="showVibes('aesthetic')">Aesthetic</button>
+      <button onclick="showVibes('adventure')">Adventure</button>
+      <button onclick="showVibes('chill')">Chill</button>
     </div>
+  </section>
 
-    <!-- Mood Selection -->
-    <div class="mood-selection">
-        <label for="mood">Select Mood:</label>
-        <select id="mood">
-            <option value="birthday">Birthday</option>
-            <option value="sad">Sad</option>
-            <option value="happy">Happy</option>
-            <option value="energetic">Energetic</option>
-            <option value="romantic">Romantic</option>
-            <option value="relaxed">Relaxed</option>
-            <option value="friends">Friends</option>
-            <option value="aesthetic">Aesthetic</option>
-            <option value="adventure">Adventure</option>
-            <option value="chill">Chill</option>
-        </select>
-        <button onclick="generateRecommendations()">Get Recommendations</button>
+  <!-- Fun GIFs -->
+  <div class="fun-gifs">
+    <img src="https://media.giphy.com/media/5xtDarzq9U0P4RNsw4U/giphy.gif" alt="color burst">
+    <img src="https://media.giphy.com/media/xT5LMq1JYDHt1RjPas/giphy.gif" alt="sparkle">
+  </div>
+
+  <div id="vibeResults" class="vibe-results"></div>
+
+  <section class="tools-section">
+    <h2>Mood Board Suggestions</h2>
+    <button onclick="showMoodBoard()">Show Layout, Colors & Poses</button>
+    <div id="moodBoard" class="mood-board hidden">
+      <div>
+        <h3>Layout Ideas</h3>
+        <ul>
+          <li>Polaroid collage with drop shadows</li>
+          <li>Neon text overlay on blurred background</li>
+          <li>Split-screen mirror filter</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Color Schemes</h3>
+        <ul>
+          <li>Lavender + Cream + Pastel Blue</li>
+          <li>Beige + Burnt Orange + Cocoa</li>
+          <li>Charcoal + Neon Pink + White</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Picture Poses</h3>
+        <img src="https://i.pinimg.com/736x/e7/b7/57/e7b7573c2e869b7a3c09e1c4dd9a7dd9.jpg" alt="Birthday Pose"/>
+        <img src="https://i.pinimg.com/564x/88/8d/65/888d6583fd2bdeed31de10ff0f3e2419.jpg" alt="Happy Pose"/>
+        <img src="https://i.pinimg.com/564x/44/f7/6f/44f76f3be0a16a6ac050c4df5a7b78e7.jpg" alt="Friends Pose"/>
+      </div>
     </div>
+  </section>
 
-    <!-- GIFs for fun -->
-    <div class="fun-gifs">
-        <img src="https://media.giphy.com/media/1mDazMc60ee9W/giphy.gif" alt="fun-gif">
-        <img src="https://media.giphy.com/media/xUOxf3cUXYbbM/hop.gif" alt="fun-gif">
-    </div>
+  <footer>
+    <p>Made with love by Zaina — VibeMatch 2025</p>
+  </footer>
 
-    <div id="recommendations" class="recommendations">
-        <!-- Recommendations will appear here -->
-    </div>
-
-    <footer>
-        <p>VibeMatch - Music and Mood for Your Story</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
