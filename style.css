@@ -1,93 +1,78 @@
+/* General styling for body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  background-color: #F3F4F6;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
-h1 {
-  text-align: center;
+/* Styling for the full vibe container */
+#fullVibe {
+  background: linear-gradient(145deg, #F48FB1, #C5CAE9);
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #333;
 }
 
-label {
-  font-size: 16px;
-  margin-right: 10px;
+/* Image Upload Section */
+.image-upload {
+  margin-bottom: 20px;
 }
 
-select {
-  font-size: 14px;
-  padding: 5px;
+#imagePreview img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Color box styling */
+.color-box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+/* Section styling */
+.section {
+  margin: 20px 0;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+/* Style for links in song list */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Style for button */
 button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #FF4081;
   color: white;
   border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #F50057;
 }
 
-#fullVibe {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  font-size: 24px;
-  color: #333;
-}
-
-.compliment {
-  font-size: 18px;
-  color: #555;
-}
-
-.section {
-  margin-top: 20px;
-}
-
-.song-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.song-card img {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
-  border-radius: 8px;
-}
-
-.song-card p {
-  font-size: 16px;
-  margin: 0;
-}
-
-.song-card a {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #007BFF;
-}
-
-.song-card a:hover {
-  text-decoration: underline;
-}
-
-.color-box {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  margin: 5px;
-  border-radius: 5px;
-}
+  
