@@ -1,73 +1,43 @@
-/* General styling for body */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #F3F4F6;
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Styling for the full vibe container */
-#fullVibe {
-  background: linear-gradient(145deg, #F48FB1, #C5CAE9);
-  padding: 20px;
-  border-radius: 15px;
-  width: 80%;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body {
+  background: #f8f9fa;
   color: #333;
+  text-align: center;
+  padding: 50px;
 }
 
-/* Image Upload Section */
-.image-upload {
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #6A1B9A;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #8E24AA;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-#imagePreview img {
-  border-radius: 10px;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Color box styling */
-.color-box {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  margin-right: 5px;
-  margin-top: 10px;
-}
-
-/* Section styling */
-.section {
-  margin: 20px 0;
-}
-
-h2, h3, h4 {
-  font-weight: 600;
-}
-
-/* Style for links in song list */
-a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: bold;
-}
-
-/* Style for button */
 button {
   background-color: #FF4081;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
   font-size: 16px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -75,4 +45,69 @@ button:hover {
   background-color: #F50057;
 }
 
-  
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.upload, .vibe-selection {
+  margin-bottom: 40px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #8E24AA;
+}
+
+.card .colors {
+  display: flex;
+  gap: 10px;
+}
+
+.card .color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.card .color-box:hover {
+  transform: scale(1.1);
+}
+
+.card a {
+  color: #FF4081;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #6A1B9A;
+}
+
